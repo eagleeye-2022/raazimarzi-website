@@ -1,0 +1,157 @@
+.login-page {
+  min-height: 100vh;
+  background: #f5f7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.login-card {
+  width: 1100px;
+  height: 650px;
+  background: #fff;
+  border-radius: 28px;
+  display: flex;
+  overflow: hidden;
+}
+
+/* LEFT IMAGE */
+.login-image {
+  width: 50%;
+  background: #000;
+  border-radius: 28px 0 0 28px;
+  overflow: hidden;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RIGHT FORM */
+.login-form {
+  width: 50%;
+  padding: 60px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-logo {
+  width: 150px;
+  margin-bottom: 16px;
+}
+
+.odr-pill {
+  display: inline-block;
+  background: #eef1ff;
+  color: #5c6cff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  width: fit-content;
+  margin-bottom: 22px;
+}
+
+.login-form h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.sub-text {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 28px;
+}
+
+/* INPUTS */
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #5c6cff;
+}
+
+/* OPTIONS */
+.form-options {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 14px;
+}
+
+.forgot {
+  font-size: 13px;
+  color: #5c6cff;
+  cursor: pointer;
+}
+
+/* ERROR */
+.error {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.login-btn {
+  width: 100%;
+  height: 48px;
+  background: #7286ff;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+}
+
+/* SIGNUP */
+.signup-text {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-text span {
+  color: #5c6cff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* SOCIAL */
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.social-login img {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  background: #fff;
+}
