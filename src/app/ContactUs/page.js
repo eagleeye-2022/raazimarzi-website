@@ -1,93 +1,85 @@
 "use client";
-
 import { useState } from "react";
 import "@/styles/contact.css";
 
-export default function ContactPage() {
-  const [form, setForm] = useState({
+export default function ContactUs() {
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
   });
 
-  const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState("");
-
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    setSuccess("");
-
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
-
-    const data = await res.json();
-
-    if (res.ok) {
-      setSuccess("Your request has been submitted successfully!");
-      setForm({ name: "", email: "", phone: "", message: "" });
-    }
-
-    setLoading(false);
+    console.log(formData);
+    alert("Form submitted successfully!");
   };
 
   return (
     <section className="contact-wrapper">
-      <div className="contact-box">
-        <img src="/assets/images/logo.png" alt="RaaziMarzi" className="logo" />
+      <div className="contact-card">
+        {/* Logo */}
+        <img
+          src="/assets/images/logo.png"
+          alt="RaaziMarzi"
+          className="contact-logo"
+        />
 
-        <h1>Let’s Connect and Get Solution...!</h1>
-        <p className="subtitle">Your solution is awaits for you.</p>
+        <h2>Let’s Connect and Get Solution..!</h2>
+        <p className="sub-text">Your solution is awaits for you.</p>
 
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            value={form.name}
-            onChange={handleChange}
-            required
-          />
+        <form onSubmit={handleSubmit} className="contact-form">
+          <div className="input-group">
+            <span className="icon">👤</span>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={form.email}
-            onChange={handleChange}
-            required
-          />
+          <div className="input-group">
+            <span className="icon">✉️</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone no."
-            value={form.phone}
-            onChange={handleChange}
-            required
-          />
+          <div className="input-group">
+            <span className="icon">📱</span>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone no."
+              value={formData.phone}
+              onChange={handleChange}
+            />
+          </div>
 
           <textarea
             name="message"
             placeholder="Message"
-            value={form.message}
+            rows="4"
+            value={formData.message}
             onChange={handleChange}
-            required
           />
 
-          <button type="submit" disabled={loading}>
-            {loading ? "Submitting..." : "Get Solution"}
+          <button type="submit" className="submit-btn">
+            Get Solution
           </button>
-
-          {success && <p className="success">{success}</p>}
         </form>
       </div>
     </section>

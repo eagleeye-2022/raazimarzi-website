@@ -38,7 +38,7 @@ export default function AboutUs() {
 
   {/* Right circle */}
   <img
-    src="/assets/icons/right git circle.png"
+    src="/assets/icons/right circle.png"
     alt=""
     className="about-circle right"
   />
