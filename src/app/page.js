@@ -1,7 +1,8 @@
-export default function Home() {
+export default function SolutionPage() {
   return (
     <div>
-      <h1>Home Page Working</h1>
+      <h1>Solution</h1>
+      <p>Coming soon</p>
     </div>
   );
 }
