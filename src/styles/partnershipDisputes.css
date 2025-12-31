@@ -565,3 +565,199 @@
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
 }
+
+
+/*MOBILE RESPONSIVE*/
+@media (max-width: 768px) {
+
+  /* CONTAINER */
+  .pd-container {
+    padding: 0 16px;
+  }
+
+  /* HERO */
+  .cd-hero-exact {
+    padding: 30px 16px 20px;
+  }
+
+  .cd-pill-exact {
+    font-size: 13px;
+    padding: 5px 14px;
+    margin-bottom: 14px;
+  }
+
+  .cd-hero-exact h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .cd-hero-exact p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-primary-exact,
+  .btn-dark-exact {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* HERO DECOR */
+  .figma-circle {
+    display: none;
+  }
+
+  .hero-glow {
+    width: 200px;
+    height: 200px;
+    filter: blur(60px);
+  }
+
+  /* DIAGONAL SECTIONS */
+  .pd-diagonal {
+    margin: 50px 0;
+  }
+
+  .pd-diagonal-text h2 {
+    font-size: 20px;
+  }
+
+  .pd-diagonal-text p {
+    font-size: 13px;
+  }
+
+  /* WHY DISPUTES OCCUR */
+  .pd-occur-wrapper {
+    padding: 24px 16px;
+  }
+
+  .pd-occur-wrapper h2 {
+    font-size: 22px;
+  }
+
+  .pd-occur-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .pd-occur-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pd-occur-card p {
+    font-size: 13px;
+  }
+
+  /* PARTNERSHIP DISAGREEMENTS */
+  .pd-disagree {
+    padding: 40px 0;
+  }
+
+  .pd-disagree-content h3 {
+    font-size: 22px;
+  }
+
+  .pd-disagree-item h4 {
+    font-size: 14px;
+  }
+
+  .pd-disagree-item p {
+    font-size: 12px;
+  }
+
+  /* TYPES OF DISPUTES */
+  .types-container {
+    padding: 24px 16px;
+  }
+
+  .types-container h2 {
+    font-size: 22px;
+  }
+
+  .types-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .types-card {
+    align-items: center;
+  }
+
+  .types-card img {
+    width: 70px;
+    height: auto;
+  }
+
+  .types-content h4 {
+    font-size: 14px;
+  }
+
+  .types-content p {
+    font-size: 12px;
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding: 40px 16px;
+  }
+
+  .faq-title {
+    font-size: 22px;
+  }
+
+  .faq-subtitle {
+    font-size: 13px;
+  }
+
+  .faq-container {
+    padding: 16px;
+  }
+
+  .faq-item {
+    font-size: 13px;
+    padding: 14px 16px;
+  }
+
+  /* CTA */
+  .contract-cta {
+    padding: 16px;
+  }
+
+  .contract-cta-box {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .contract-cta-content {
+    padding: 26px 20px;
+    text-align: center;
+  }
+
+  .contract-cta-content h2 {
+    font-size: 20px;
+  }
+
+  .contract-cta-content p {
+    font-size: 13px;
+  }
+
+  .contract-cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .contract-cta-image {
+    display: none;
+  }
+}
