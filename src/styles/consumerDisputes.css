@@ -596,3 +596,233 @@ section {
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
 }
+
+
+
+
+
+/* MOBILE RESPONSIVE */
+
+
+@media (max-width: 768px) {
+
+  /* ================= HERO ================= */
+  .cd-hero-exact {
+    padding: 24px 16px 20px;
+    margin: 0;
+  }
+
+  .cd-pill-exact {
+    font-size: 13px;
+    padding: 6px 14px;
+    margin-bottom: 12px;
+  }
+
+  .cd-hero-exact h1 {
+    font-size: 26px;
+    line-height: 1.35;
+  }
+
+  .cd-hero-exact p {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .btn-primary-exact,
+  .btn-dark-exact {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .figma-circle {
+    display: none;
+  }
+
+  .hero-glow {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* ================= INFO GRID ================= */
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    font-size: 14px;
+  }
+
+  /* ================= COMMON DISPUTES ================= */
+  .consumer-types {
+    padding: 24px 16px;
+  }
+
+  .consumer-types h2 {
+    font-size: 22px;
+  }
+
+  .consumer-types .subtitle {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .types-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .type-card {
+    padding: 16px;
+  }
+
+  .type-content h4 {
+    font-size: 14px;
+  }
+
+  .type-content p {
+    font-size: 12.5px;
+  }
+
+  /* ================= WHO CAN FILE ================= */
+  .who-can-file h2 {
+    font-size: 22px;
+  }
+
+  .who-can-file .subtitle {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .flow-container {
+    height: auto;
+  }
+
+  .flow-svg {
+    display: none;
+  }
+
+  .flow-items {
+    flex-direction: column;
+    gap: 26px;
+    padding: 0;
+  }
+
+  .flow-item {
+    width: 100%;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* ================= RIGHTS ================= */
+  .rights-section {
+    padding: 30px 16px;
+  }
+
+  .rights-section h2 {
+    font-size: 22px;
+  }
+
+  .rights-subtitle {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .rights-cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .rights-card {
+    width: 100%;
+  }
+
+  /* ================= WHY CHOOSE ================= */
+  .why-choose-title {
+    font-size: 22px;
+  }
+
+  .why-choose-subtitle {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .why-icon-circle img {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* ================= FAQ ================= */
+  .faq-container h2 {
+    font-size: 22px;
+  }
+
+  .faq-box {
+    padding: 18px;
+  }
+
+  .faq-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .faq-tab {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  .faq-item {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  /* ================= CTA ================= */
+  .contract-cta {
+    padding: 24px 16px;
+  }
+
+  .contract-cta-box {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .contract-cta-content {
+    padding: 26px 20px;
+    text-align: center;
+  }
+
+  .contract-cta-content h2 {
+    font-size: 20px;
+  }
+
+  .contract-cta-content p {
+    font-size: 14px;
+  }
+
+  .contract-cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .contract-cta-image {
+    display: none;
+  }
+}
