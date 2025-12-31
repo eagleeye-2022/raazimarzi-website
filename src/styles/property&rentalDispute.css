@@ -635,3 +635,212 @@
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
 }
+
+
+
+/*MOBILE RESPONSIVE*/
+
+@media (max-width: 768px) {
+
+  /* GLOBAL */
+  .prd-container {
+    padding: 0 16px;
+  }
+
+  /* ================= HERO ================= */
+  .cd-hero-exact {
+    padding: 24px 16px 10px;
+  }
+
+  .cd-pill-exact {
+    font-size: 14px;
+    padding: 6px 14px;
+    margin-bottom: 14px;
+  }
+
+  .cd-hero-exact h1 {
+    font-size: 26px;
+    line-height: 1.35;
+  }
+
+  .cd-hero-exact p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .btn-primary-exact,
+  .btn-dark-exact {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .figma-circle {
+    display: none;
+  }
+
+  .hero-glow {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* ================= DIAGONAL SECTIONS ================= */
+  .prd-diagonal {
+    margin: 50px 0;
+  }
+
+  .prd-diagonal-text h2 {
+    font-size: 22px;
+  }
+
+  .prd-diagonal-text p {
+    font-size: 14px;
+  }
+
+  /* ================= EXAMPLES ================= */
+  .prd-examples-card {
+    padding: 24px 20px;
+    border-radius: 20px;
+  }
+
+  .prd-examples-col h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .prd-examples-col li {
+    font-size: 14px;
+  }
+
+  .prd-examples-icon img {
+    width: 140px;
+  }
+
+  /* ================= TYPES GRID ================= */
+  .types-prd-title {
+    font-size: 22px;
+  }
+
+  .types-prd-subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .types-prd-card h4 {
+    font-size: 15px;
+  }
+
+  .types-prd-card li {
+    font-size: 14px;
+  }
+
+  /* ================= WHY CHOOSE ================= */
+  .why-choose-title {
+    font-size: 22px;
+  }
+
+  .why-choose-grid {
+    gap: 24px;
+  }
+
+  .why-icon-circle img {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* WHO CAN USE */
+  .who-container {
+    padding: 30px 20px 40px;
+  }
+
+  .who-container h2 {
+    font-size: 22px;
+  }
+
+  .who-subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .who-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .who-card {
+    width: 100%;
+    height: auto;
+    padding: 18px 12px;
+    font-size: 14px;
+  }
+
+  .who-grid > :nth-child(5),
+  .who-grid > :nth-child(6),
+  .who-grid > :nth-child(7) {
+    grid-column: auto;
+  }
+
+  /*FAQ*/
+  .faq-container h2 {
+    font-size: 22px;
+  }
+
+  .faq-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .faq-tab {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  .faq-item {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  /*CTA */
+  .contract-cta {
+    padding: 30px 16px;
+  }
+
+  .contract-cta-box {
+    width: 100%;
+    grid-template-columns: 1fr;
+    border-radius: 14px;
+  }
+
+  .contract-cta-content {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .contract-cta-content h2 {
+    font-size: 20px;
+  }
+
+  .contract-cta-content p {
+    font-size: 14px;
+  }
+
+  .contract-cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .contract-cta-image {
+    display: none;
+  }
+}
